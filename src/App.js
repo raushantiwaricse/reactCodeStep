@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
 function App() {
+  const [status, setstatus] = useState(false);
+  // const handleHide = () => {
+  //   setstatus(false);
+  // };
+  // const handleShow = () => {
+  //   setstatus(true);
+  // };
+  const handle = () => {
+    setstatus(!status);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {status ? <h1>Hello React</h1> : null}
+      {/* <button onClick={handleHide}>Hide</button>
+      <button onClick={handleShow}>Show</button> */}
+      <button onClick={handle}>Toogle</button> # toggling
     </div>
   );
 }
