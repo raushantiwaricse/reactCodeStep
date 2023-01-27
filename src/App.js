@@ -1,6 +1,7 @@
 // import React, { useState } from "react";
 import "./App.css";
-import Form from './Form.js';
+// import Form from "./Form.js";
+import Profile from "./Profile";
 function App() {
   // const [status, setstatus] = useState(false);
   // const handleHide = () => {
@@ -19,8 +20,9 @@ function App() {
       <button onClick={handleShow}>Show</button> */}
       {/* <button onClick={handle}>Toogle</button> # toggling */}
 
-      <h1>Hello form</h1>
-      <Form/>
+      {/* <h1>Hello form</h1> */}
+      {/* <Form/> */}
+      <Profile />
     </div>
   );
 }
