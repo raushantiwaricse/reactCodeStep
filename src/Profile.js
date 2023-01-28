@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 
 function Profile() {
-  const [LogIn, setlogIn] = useState(2);
+  const [logIn, setLogIn] = useState(2);
+
   return (
     <div>
-      {LogIn === 1 ? (
-        <h1>Welcome Tannu</h1>
-      ) : LogIn === 2 ? (
-        <h1>Welcome Guest2</h1>
+      {logIn == 1 ? (
+        <h1>Raushan</h1>
+      ) : logIn == 2 ? (
+        <h1>Tannu</h1>
       ) : (
-        <h1>Welcome Guest3</h1>
+        <h1>Annu</h1>
       )}
     </div>
   );
